@@ -75,7 +75,7 @@ export default function WelcomeScreen() {
                 <PivotLogo light />
                 <Text style={screen.welcomeEyebrow}>Sustainable Fashion</Text>
               </View>
-              <Text style={screen.heroTitle}>Affordable fashion that's better for the planet.</Text>
+              <Text style={screen.heroTitle}>Affordable fashion that&apos;s better for the planet.</Text>
               <Text style={screen.heroCopy}>
                 Buy pre-loved pieces, discover sustainable brands, and earn rewards for making better
                 choices.
@@ -190,9 +190,9 @@ export default function WelcomeScreen() {
           <View style={screen.prefProgressTrack}>
             <View style={[screen.prefProgressFill, screen.prefProgressHalf]} />
           </View>
-          <Text style={screen.prefTitle}>What's your style?</Text>
+          <Text style={screen.prefTitle}>What&apos;s your style?</Text>
           <Text style={screen.prefCopy}>
-            Pick the aesthetics you love. We'll curate your feed accordingly.
+            Pick the aesthetics you love. We&apos;ll curate your feed accordingly.
           </Text>
           <View style={screen.styleGrid}>
             {onboardingStyleOptions.map((option) => {
