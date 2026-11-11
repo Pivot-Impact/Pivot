@@ -95,11 +95,10 @@ restarts.
 
 ```sh
 git clone <repository-url>
-cd Pivot/Pivot
+cd Pivot
 ```
 
-If you already have the repository, change into the app directory containing
-`package.json` before running the following commands.
+The repository root contains `package.json`; run the following commands there.
 
 ### 2. Install dependencies
 
@@ -145,15 +144,20 @@ Install Xcode and an iOS Simulator, start Expo with `npx expo start`, then press
 ## Project Structure
 
 ```text
-Pivot/
+.
+├── assets/
+├── scripts/
 ├── src/
 │   ├── app/
+│   │   ├── (tabs)/
+│   │   └── product/
 │   ├── components/
+│   │   └── ui/
 │   ├── constants/
+│   ├── hooks/
 │   └── state/
-├── assets/
-├── package.json
 ├── app.json
+├── package.json
 └── README.md
 ```
 
