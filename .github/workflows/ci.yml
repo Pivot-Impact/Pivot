@@ -18,9 +18,7 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    defaults:
-      run:
-        working-directory: Pivot
+
     steps:
       - uses: actions/checkout@v4
 
@@ -28,7 +26,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: Pivot/package-lock.json
+          cache-dependency-path: package-lock.json
 
       - run: npm ci
       - run: npx tsc --noEmit
